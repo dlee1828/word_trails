@@ -29,33 +29,13 @@ body {
 	}
 }
 
-@keyframes loadingAnimation {
-	0% {
-		transform: rotateZ(0deg);
-	}
-	100% {
-		transform: rotateZ(360deg);
-	}
-}
-
-@keyframes loadingOuterAnimation {
-	0% {
-		transform: rotateX(0deg);
-	}
-	100% {
-		transform: rotateX(360deg);
-	}
-}
-
 .loadingOuter {
 	margin-top: 50px;
-	animation: loadingOuterAnimation;
 	animation-duration: 5s;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
 	.loading {
 		perspective: 400px;
-		animation: loadingAnimation;
 		animation-duration: 5s;
 		animation-iteration-count: infinite;
 		animation-timing-function: linear;
