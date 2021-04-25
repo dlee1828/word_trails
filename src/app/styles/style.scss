@@ -1,9 +1,13 @@
 @import "bubble";
 @import "inputSpace";
+@import "wordChain";
+@import "button";
+@import "instructionWordChain";
 
 body {
 	margin: 0;
 	padding: 0;
+	overflow: scroll;
 }
 @font-face {
 	font-family: "Handwritten";
@@ -12,13 +16,48 @@ body {
 .root {
 	width: 100vw;
 	height: 100vh;
+	overflow: scroll;
 	// background: black;
 	font-family: "Handwritten";
 	font-size: 30px;
 	display: flex;
-	justify-content: center;
-	input {
+	flex-flow: column nowrap;
+	align-items: center;
+	.buttonsArea {
 		margin-top: 50px;
-		height: 20px;
+		margin-bottom: 50px;
+	}
+}
+
+@keyframes loadingAnimation {
+	0% {
+		transform: rotateZ(0deg);
+	}
+	100% {
+		transform: rotateZ(360deg);
+	}
+}
+
+@keyframes loadingOuterAnimation {
+	0% {
+		transform: rotateX(0deg);
+	}
+	100% {
+		transform: rotateX(360deg);
+	}
+}
+
+.loadingOuter {
+	margin-top: 50px;
+	animation: loadingOuterAnimation;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	.loading {
+		perspective: 400px;
+		animation: loadingAnimation;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
 	}
 }

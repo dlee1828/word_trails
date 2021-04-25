@@ -1,0 +1,28 @@
+.instructionWordChain {
+	margin-top: 20px;
+	margin-bottom: 50px;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	.chainItem {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+		align-items: center;
+		border-width: 1px;
+		.chainWord {
+			border-style: solid;
+			border-radius: 20px;
+			padding: 10px;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+		.link {
+			width: 75px;
+			border: dashed 2px black;
+		}
+	}
+}

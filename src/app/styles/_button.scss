@@ -1,0 +1,16 @@
+button {
+	appearance: none;
+	background-color: white;
+	border: none;
+	padding: 0px 0px;
+	font-family: "Handwritten";
+	border-bottom: dashed 2px;
+	border-color: white;
+	font-size: 25px;
+	line-height: 30px;
+	&:hover {
+		border-color: black;
+		cursor: pointer;
+		transition: all 0.5s;
+	}
+}

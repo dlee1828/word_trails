@@ -3,12 +3,12 @@ input[type="text"] {
 	border-style: none;
 	font-size: 50px;
 	border-bottom: solid 2px;
+	font-family: "Handwritten";
 	width: 300px;
 	line-height: 50px;
 	display: block;
-	padding: 25px 0px;
+	padding: 0px 0px;
 	&:focus {
 		outline: none;
-		// transform: rotate(0.5turn);
 	}
 }
