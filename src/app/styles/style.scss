@@ -1,11 +1,20 @@
+@import "bubble";
+@import "inputSpace";
+
 body {
 	margin: 0;
 	padding: 0;
 }
+@font-face {
+	font-family: "Handwritten";
+	src: url("../assets/FuturaHandwritten.ttf");
+}
 .root {
 	width: 100vw;
 	height: 100vh;
-	background: black;
+	// background: black;
+	font-family: "Handwritten";
+	font-size: 30px;
 	display: flex;
 	justify-content: center;
 	input {

@@ -1,0 +1,14 @@
+input[type="text"] {
+	appearance: none;
+	border-style: none;
+	font-size: 50px;
+	border-bottom: solid 2px;
+	width: 300px;
+	line-height: 50px;
+	display: block;
+	padding: 25px 0px;
+	&:focus {
+		outline: none;
+		// transform: rotate(0.5turn);
+	}
+}
